@@ -9,20 +9,23 @@ function validation() {
     var isValid = true;
     hideAll();
 
+    //Checking whether name is valid
     if(name.value == null || name.value == "") {
         isValid = false;
         showNameError();
 
     }
 
+    //Checking whether email is valid
     if(!verifyEmail(email.value)) {
         isValid = false;
         showEmailError();
 
     }
-    console.log(gender);
-    console.log(city);
 
+    /*Checking whether the data on the form is valid. If anything is not valid
+    we return false else we return true.
+    */
     if(isValid == true) {
         return true;
     }
