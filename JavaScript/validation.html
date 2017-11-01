@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <form id="myForm" onsubmit="return validation()">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" id="name">
+                        <small id="nameError" class="form-text text-muted">This field is required.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email">
+                        <small id="emailError" class="form-text text-muted">Please enter a valid email Id.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="password" id="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <input value="male" class="form-control" type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+
+                        <input value="female" class="form-control" type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hobbies</label>
+                        <input class="form-control" type="checkbox" id="soccer">
+                        <label for="soccer">Soccer</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="checkbox" id="cricket">
+                        <label for="cricket">Cricket</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="checkbox" id="baseball">
+                        <label for="baseball">Baseball</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option class="form-control" value="indore">Indore</option>
+                            <option class="form-control" value="bhopal">Bhopal</option>
+                            <option class="form-control" value="pune">Pune</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+
+</html>
